@@ -1,5 +1,5 @@
 import random;
-
+a = 1;
 def getRandomWord():
 
     return_list = [];
