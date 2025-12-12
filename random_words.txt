@@ -1,36 +1,36 @@
-Apfel
-Banane
-Kaktus
-Computer
-Algorithmus
-Schneeflocke
-Hexenkessel
-Fußball
-Notebook
-Wasserfall
-Sternenhimmel
-Elefant
-Programmierer
-Tastatur
-Schokolade
-Abenteuer
-Tornado
-Feuerwehr
-Regenbogen
-Marmelade
-Bibliothek
-Pinguin
-Satellit
-Berggipfel
-Pizzateig
-Goldfisch
-Neonlicht
-Zeitreise
-Blumentopf
-Zaubertrick
-Kokosnuss
-Geheimnis
-Laserpointer
-Schneemann
-Piratenschiff
-Funkgerät
+Apfel; Eine runde Frucht, oft rot oder grün
+Banane; Eine lange gelbe Frucht, die man schält
+Kaktus; Stachelige Pflanze, die kaum Wasser braucht
+Computer; Gerät zum Arbeiten, Schreiben oder Spielen
+Algorithmus; Schritt-für-Schritt-Anleitung zur Problemlösung
+Schneeflocke; Winziges Eiskristall mit Muster
+Hexenkessel; Großer Topf für magische Tränke
+Fußball; Runder Ball, den man mit den Füßen spielt
+Notebook; Kleiner tragbarer Computer
+Wasserfall; Herabstürzendes Wasser über Felsen
+Sternenhimmel; Nacht voller leuchtender Punkte
+Elefant; Großes Tier mit langem Rüssel
+Programmierer; Jemand, der Code schreibt
+Tastatur; Gerät mit vielen Tasten zum Eingeben
+Schokolade; Süßer Snack aus Kakao
+Abenteuer; Aufregende oder ungewöhnliche Erfahrung
+Tornado; Wirbelnde Windröhre mit großer Kraft
+Feuerwehr; Helfer, die Brände löschen
+Regenbogen; Farbbogen nach Regen und Sonne
+Marmelade; Süßer Aufstrich aus Früchten
+Bibliothek; Ort voller Bücher zum Ausleihen
+Pinguin; Schwarz-weißes Tier, das nicht fliegt
+Satellit; Objekt, das um die Erde kreist
+Berggipfel; Höchster Punkt eines Berges
+Pizzateig; Grundmasse aus Mehl und Hefe für ein Gericht
+Goldfisch; Kleiner oranger Fisch im Aquarium
+Neonlicht; Helles buntes Werbelicht
+Zeitreise; Bewegung in Vergangenheit oder Zukunft
+Blumentopf; Behälter für eine Pflanze
+Zaubertrick; Eine überraschende Illusion
+Kokosnuss; Harte braune Frucht mit weißem Inneren
+Geheimnis; Etwas, das man nicht verraten soll
+Laserpointer; Gerät mit schmalem roten Lichtstrahl
+Schneemann; Figur aus Schnee
+Piratenschiff; Segelschiff voller Schatzsucher
+Funkgerät; Gerät zum drahtlosen Sprechen

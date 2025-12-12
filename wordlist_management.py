@@ -37,6 +37,3 @@ def checkWord(pWord, pWordAsList, pPlayers):
                 
 
 
-checkWord(getRandomWord(), [], ["Jonas", "Tim", "Erika"])
-
-
