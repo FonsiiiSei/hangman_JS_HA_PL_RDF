@@ -20,3 +20,19 @@ def getPlayersNames():
     print(f"\nIn eurem Team sind \n {" ".join(player_list)} \n Viel Erfolg!\n")
 
     return player_list
+
+
+
+word = getRandomWord()
+def askForTip(word):
+        asking_for_tip = int(input("Möchtet ihr einen Hinweis für das gesuchte Wort erhalten:\n1=ja \n2=nein\n"))
+        if asking_for_tip == 1:
+            with open("random_words.txt", "r", encoding="utf-8") as file:
+                content = file.readlines()
+        for line in content:
+            line = line.strip()
+            if ";" in line:
+                w, tipp = line.split(";", 1)
+                if w == word:
+                    print("Tipp:", tipp)
+                    return
