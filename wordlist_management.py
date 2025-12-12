@@ -11,6 +11,8 @@ def getRandomWord():
     return(return_list[random.randint(1, len(content))]);
   
 
+
+
 def checkWord(pWord, pWordAsList, pPlayers):
     print(pWord);
     emptyList = [];
@@ -22,16 +24,20 @@ def checkWord(pWord, pWordAsList, pPlayers):
     while True:
         print(" ".join(emptyList));
         currentGuess = input(f"{pPlayers[currentPlayerIndex]}, Bitte gib deinen guess ab: ");
-        if currentGuess in pWord:
-            print("is drinne, du darfst nochmal");
-            emptyList[pWord.index(currentGuess)] = currentGuess;
+        indices = []
+
+        for i, c in enumerate(pWord):
+            if c == currentGuess:
+                indices.append(i)
+
+        if indices:
+            print("Treffer! Du bist nochmal dran.")
+            for i in indices:
+                emptyList[i] = currentGuess
         else:
             print("leider falsch, nächster is dran");
-            ##end of list => last player failed, jump to begin
-            if(currentPlayerIndex+1 == len(pPlayers)):
-                currentPlayerIndex = 0;
-            else:
-                currentPlayerIndex = currentPlayerIndex + 1;
+            currentPlayerIndex = (currentPlayerIndex + 1) % len(pPlayers)
+
 
 
                 

@@ -10,23 +10,12 @@
 
 print("Hallo Hans, du bist drann:")
 
-print("  ")	
-	
-print("     ",chr(9744),chr(9744),chr(9744),chr(9744),chr(9744),chr(9744),chr(9744),chr(9744),chr(9744))
+
+
 print("     ",chr(9744),"       ",chr(9744))
 print("     ",chr(9744),"       ",chr(9744))
 print("     ",chr(9744),"       ",chr(9744))
-print("     ",chr(9744),"     ",chr(9744),chr(9744),chr(9744))
-print("     ",chr(9744),"    ",chr(9744),"   ",chr(9744))
-print("     ",chr(9744),"     ",chr(9744),chr(9744),chr(9744))
-print("     ",chr(9744),"       ",chr(9744))
-print("     ",chr(9744),"   ",chr(9744),chr(9744),chr(9744),chr(9744),chr(9744))
-print("     ",chr(9744),"       ",chr(9744))
-print("     ",chr(9744),"     ",chr(9744),chr(9744),chr(9744))
-print("     ",chr(9744),"     ",chr(9744)," ",chr(9744))	
-print("     ",chr(9744))
 print("   ",chr(9744),chr(9744),chr(9744))
-print("  ",chr(9744),chr(9744),chr(9744),chr(9744))
 print(" ",chr(9744),chr(9744),chr(9744),chr(9744),chr(9744))	
 print(chr(9744),chr(9744),chr(9744),chr(9744),chr(9744),chr(9744),chr(9744))
 	
