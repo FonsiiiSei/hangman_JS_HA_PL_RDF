@@ -1,5 +1,6 @@
 import random;
-a = 1;
+import Mera_draw;
+
 def getRandomWord():
 
     return_list = [];
@@ -11,10 +12,9 @@ def getRandomWord():
     return(return_list[random.randint(1, len(content))]);
   
 
-
-
 def checkWord(pWord, pWordAsList, pPlayers):
-    print(pWord);
+    failCount = 0;
+
     emptyList = [];
     for element in pWord:
         emptyList.append("_")
@@ -22,27 +22,34 @@ def checkWord(pWord, pWordAsList, pPlayers):
     currentGuess = "";
     currentPlayerIndex = 0;
     while True:
+        #first check if its won
+        if "_" not in emptyList:
+            print("Glückwunsch, ihr habt gewonnen!");
+        
         print(" ".join(emptyList));
         currentGuess = input(f"{pPlayers[currentPlayerIndex]}, Bitte gib deinen guess ab: ");
+        
         indices = []
-
         for i, c in enumerate(pWord):
             if c == currentGuess:
                 indices.append(i)
 
-        if indices:
-            print("Treffer! Du bist nochmal dran.")
-            for i in indices:
-                emptyList[i] = currentGuess
+        if indices: #value found
+                print("Treffer! Du bist nochmal dran.")
+                for i in indices:
+                    emptyList[i] = currentGuess;
+        
         else:
-            print("leider falsch, nächster is dran");
-            currentPlayerIndex = (currentPlayerIndex + 1) % len(pPlayers)
-
-
-
-                
-
-
-checkWord(getRandomWord(), [], ["Jonas", "Tim", "Erika"])
+            failCount = failCount + 1;
+            if(failCount == 8):
+                Mera_draw.draw_hangmann(failCount);
+                print("Game Over.")
+                print(f"Das Wort wäre gewesen: {pWord}")
+                break;
+            else:
+                print("leider falsch, nächster is dran ");
+                print(" ")
+                Mera_draw.draw_hangmann(failCount);
+                currentPlayerIndex = (currentPlayerIndex + 1) % len(pPlayers)
 
 
