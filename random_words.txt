@@ -1,20 +1,20 @@
-Tastatur; Eingabegerät zum Tippen
-Monitor; Ausgabegerät für Bildschirminhalte
-Maus; Zeigegerät zur Steuerung
-Computer; verarbeitet Daten
-Laptop; tragbarer Computer
-Drucker; gibt Dokumente auf Papier aus
-Scanner; digitalisiert Papierdokumente
-Router; verbindet Netzwerke
-Server; stellt Dienste bereit
-Netzwerk; verbundene Geräte
-Internet; weltweites Netzwerk
-Python; Programmiersprache
-Java; objektorientierte Programmiersprache
-Variable; speichert Werte
-Funktion; wiederverwendbarer Codeblock
-Schleife; wiederholt Anweisungen
-Array; feste Datenstruktur
-Liste; flexible Datensammlung
-Datenbank; speichert strukturierte Daten
-Programm; Folge von Anweisungen
+Tastatur
+Monitor
+Maus
+Computer
+Laptop
+Drucker
+Scanner
+Router
+Server
+Netzwerk
+Internet
+Python
+Java
+Variable
+Funktion
+Schleife
+Array
+Liste
+Datenbank
+Programm

@@ -1,7 +1,8 @@
 import random;
 import Mera_draw;
-
+ 
 def getRandomWord():
+ 
     return_list = [];
     with open("random_words.txt", "r", encoding="utf-8") as file:
         content = file.readlines();
@@ -9,14 +10,16 @@ def getRandomWord():
             return_list.append(element.strip())
  
     return(return_list[random.randint(1, len(content))]);
-  
-
+ 
+ 
 def checkWord(pWord, pWordAsList, pPlayers):
+    list_namend_letters = [] #Speichert vom Nutzer genannten Buchstaben
     failCount = 0;
+ 
     emptyList = [];
     for element in pWord:
         emptyList.append("_")
-
+ 
     currentGuess = "";
     currentPlayerIndex = 0;
     while True:
@@ -24,20 +27,24 @@ def checkWord(pWord, pWordAsList, pPlayers):
         if "_" not in emptyList:
             print("Glückwunsch, ihr habt gewonnen!");
             break;
-        
+       
         print(" ".join(emptyList));
         currentGuess = input(f"{pPlayers[currentPlayerIndex]}, Bitte gib deinen guess ab: ");
-        
+        list_namend_letters.append(currentGuess)
+        print(
+                    f"\nBereits genannte Buchstaben:\n"
+                    f"\033[92m{', '.join(list_namend_letters)}\033[0m") #Gibt die vom Nutzer genannten Buchstaben aus
+ 
         indices = []
         for i, c in enumerate(pWord):
             if c == currentGuess:
                 indices.append(i)
-
+ 
         if indices: #value found
                 print("Treffer! Du bist nochmal dran.")
                 for i in indices:
                     emptyList[i] = currentGuess;
-        
+       
         else:
             failCount = failCount + 1;
             if(failCount == 8):
@@ -50,7 +57,3 @@ def checkWord(pWord, pWordAsList, pPlayers):
                 print(" ")
                 Mera_draw.draw_hangmann(failCount);
                 currentPlayerIndex = (currentPlayerIndex + 1) % len(pPlayers)
-
-
-
-
