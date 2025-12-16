@@ -25,7 +25,7 @@ def checkWord(pWord, pWordAsList, pPlayers):
     while True:
         #first check if its won
         if "_" not in emptyList:
-            print("Glückwunsch, ihr habt gewonnen!");
+            print(f"Glückwunsch, ihr habt gewonnen und {pWord} erraten!");
             break;
        
         print(" ".join(emptyList));
