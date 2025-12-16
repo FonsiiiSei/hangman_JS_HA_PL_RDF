@@ -2,7 +2,6 @@ import random;
 import Mera_draw;
 
 def getRandomWord():
-
     return_list = [];
     with open("random_words.txt", "r", encoding="utf-8") as file:
         content = file.readlines();
@@ -14,7 +13,6 @@ def getRandomWord():
 
 def checkWord(pWord, pWordAsList, pPlayers):
     failCount = 0;
-
     emptyList = [];
     for element in pWord:
         emptyList.append("_")
@@ -25,6 +23,7 @@ def checkWord(pWord, pWordAsList, pPlayers):
         #first check if its won
         if "_" not in emptyList:
             print("Glückwunsch, ihr habt gewonnen!");
+            break;
         
         print(" ".join(emptyList));
         currentGuess = input(f"{pPlayers[currentPlayerIndex]}, Bitte gib deinen guess ab: ");

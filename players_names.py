@@ -22,8 +22,6 @@ def getPlayersNames():
     return player_list
 
 
-
-word = getRandomWord()
 def askForTip(word):
         asking_for_tip = int(input("Möchtet ihr einen Hinweis für das gesuchte Wort erhalten:\n1=ja \n2=nein\n"))
         if asking_for_tip == 1:
